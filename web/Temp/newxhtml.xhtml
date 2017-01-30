@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script type="text/javascript">
+            var i=0;
+            function changeValue() {
+             i=i+1;
+document.getElementById("form1:hiddenTxt").value = "ch:"+i;
+
+document.getElementById("form1:btnAjax").click();
+
+
+    }
+
+            </script>
+                  
+
+    </h:head>
+
+    <body>
+
+
+        <h:form id="form1">
+           
+            <h:outputText id="outtxt" value="#{user.name}" escape="true"/><br/><br/>
+            <h:inputText id="hiddenTxt" value="#{user.name}"/>
+
+
+
+         <input type="button" onclick="changeValue();" value="Hmtl Button"/>
+            <br/>
+            
+         <h:commandButton id="btnAjax" value="submit AJAX">
+                <f:ajax execute="hiddenTxt" render="outtxt"/>
+            </h:commandButton>
+        </h:form>
+        
+    </body>
+</html>

@@ -1,0 +1,5 @@
+Select communityhealthcareorganisation.name,count(*)
+from hfdrecord inner join hospital on hfdrecord.hospitalCode=hospital.DoHCode INNER join communityhealthcareorganisation
+on hospital.areaid=communityhealthcareorganisation.id
+GROUP by communityhealthcareorganisation.name
+order by count(*) desc

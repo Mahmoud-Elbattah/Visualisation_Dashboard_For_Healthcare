@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <body>
+        <h:form>
+
+            <p:chart type="bubble" model="#{test.bubbleModel1}" responsive="true" />
+
+
+
+   <p:selectBooleanCheckbox itemLabel="Bar Chart(Vertical)" value="#{test.verBarchartSelected}"/>
+
+            
+            <p:selectOneMenu  value="#{test.country}">
+                <f:selectItem itemLabel="Select One" itemValue="-1" />
+                <f:selectItem itemLabel="NIMS Incidents Summary" itemValue="0" />
+                <f:selectItem itemLabel="Age Groups Summary" itemValue="1" />
+                <f:selectItem itemLabel="Gender Summary" itemValue="2" />
+            </p:selectOneMenu>  
+
+            <p:commandButton value="View"  update="votes,barChart1" />
+            <div id="div1" style="visibility:  hidden">
+              <p:chart  id="votes" type="pie" model="#{test.getLivePieModel()}" style="width:400px;height:300px"/>
+            </div>
+            <div id="div2" style="visibility:  hidden">
+                 <p:chart id="barChart1" type="bar"  model="#{test.getBar()}" style="height:300px"/>
+    
+            </div>
+
+
+        </h:form>
+    </body>
+</html>

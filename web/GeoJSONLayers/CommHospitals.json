@@ -1,0 +1,972 @@
+{
+"type": "FeatureCollection","features": [{
+"type": "Feature",
+"properties": {
+"Name":"Abbeyleix\nCo.Laois",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.347882,52.91528]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Baggot Street\nCo.Dublin",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.244193,53.333774]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Ballina\nCo.Mayo",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.165308,54.114506]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Ballyshannon\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.184029,54.501639]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Baltinglass\nCo.Wicklow",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.709959,52.941898]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Bandon\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.731815,51.746126]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Birr\nCo.Offaly",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.902973,53.095964]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Buncrana Nursing Unit\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.451908,55.134457]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Cahercalla\nCo.Clare",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.003802,52.832899]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Caherciveen\nCo.Kerry",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.5668632,52.15446069999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Camillus'\nCo.Limerick",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.643879,52.668991]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Carlow\nCo.Carlow",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.928451,52.846923]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Carndonagh\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.267747,55.245257]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Castlecomer\nCo.Kilkenny",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.209329,52.805567]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Castletownbere\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.910706,51.651893]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Clifden\nCo.Galway",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-10.017925,53.48896]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Clonakilty\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.876361,51.630463]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Donegal\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.092023,54.657258]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Dunmanway\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.111766,51.722137]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Ennistymon\nCo.Clare",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.316948,52.938577]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Fermoy\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.255563,52.138991]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Gorey\nCo.Wexford",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.30071,52.673564]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Kanturk\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.905253,52.17711]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Kenmare\nCo.Kerry",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.581393,51.888643]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Killarney\nCo.Kerry",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.517496,52.065636]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Killybegs\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.438939,54.637871]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Kinsale\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.527126,51.71282]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Lifford\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.483408,54.83127]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Listowel\nCo.Kerry",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.486154,52.447157]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Macroom\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.96683,51.907365]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Manorhamilton\nCo.Leitrim",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.176739,54.304811]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Midleton\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.171538,51.917895]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Millstreet\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.064841,52.060013]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Our Lady's\nCo.Tipperary",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.887653,52.516747]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Raheen\nCo.Clare",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.528975,52.91145]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Ramelton Community Hospital\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.721264,54.952669]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Rock Nursing Unit\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.1922,54.502993]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Schull\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.546098,51.521554]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Skibbereen\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.266154,51.548491]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Brigid's\nCo.Tipperary",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.404826,52.349086]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Finbarrs\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.461497,51.886118]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Ita's\nCo.Limerick",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.050305,52.454739]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St John's\nCo.Sligo",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.469124,54.279958]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Mary's\nCo.Monaghan",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.739914,54.117637]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Theresa's\nCo.Tipperary",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.995146,52.276961]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Vincent's\nCo.Waterford",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.615177,52.121479]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Vincents\nCo.Westmeath",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.941891,53.435168]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Stranorlar\nCo.Donegal",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.75103,54.805442]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Swinford\nCo.Mayo",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.946152,53.944263]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Vincents\nCo.Kildare",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.992413,52.996315]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Youghal\nCo.Cork",
+"PatientCount":"0",
+"PatientsAged65":"0",
+"MalePatients":"0",
+"FemalePatients":"0",
+"AdmittedWithin4hrs":"0",
+"SurgeryWithin48hrs":"0",
+"AvgLOS":"0",
+"icon":"community.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.859397,51.957279]
+}
+}
+]
+}

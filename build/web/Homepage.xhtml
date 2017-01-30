@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+
+        <ui:composition template="./masterTemplate.xhtml">
+            <!-- Client CSS/JS-->
+            <ui:define name="TemplateClientHeader">
+
+                <script type="text/javascript">
+                    //Function used to extend the pie chart highlighter
+                    function SetPieHighlighter() {
+                        this.cfg.highlighter = {
+                            show: true,
+                            tooltipFade: true,
+                            tooltipLocation: 'ne',
+                            tooltipFadeSpeed: 'slow',
+                            useAxesFormatters: false,
+                            tooltipAxes: 'both',
+                            formatString: '<table class="jqplot-highlighter"><tr><td>%s</td></tr><tr><td>Total NIMS Incidents:</td><td>%s</td></tr></table>'
+
+                        }
+                    }
+           
+                        function SetBubbleHighlighter() {
+                        this.cfg.highlighter = {
+                            show: true,
+                            tooltipFade: true,
+                            tooltipLocation: 'e',
+                            tooltipOffset:30,
+                            tooltipFadeSpeed: 'slow',
+                            useAxesFormatters: false,
+                            tooltipAxes: 'both',
+                            formatString: '<table class="jqplot-highlighter"><tr><td>Total Population:</td><td>%s</td></tr><tr><td>Total NIMS Incidents:</td><td>%s</td></tr><tr><td>No. of NIMS Incidents (Age >= 65):</td><td>%s</td></tr></table>'
+
+                        }
+                    }
+                    
+                        function EnableChartVaryColor() {        
+                         // this = chart widget instance        
+                         // this.cfg = options      
+                         this.cfg.seriesDefaults.rendererOptions.varyBarColor = true;
+                        }
+                        function showdiv(){
+                           
+   // $('#divoptions').slideToggle('slow');
+    //$('#divoptions').slideUp();
+   // $('#divoptions').animate({height '20%'});
+                        }
+                 function showSlide1(){
+                     document.getElementById('slide1').style.position="relative";
+                     document.getElementById('slide2').className="item";
+                     document.getElementById('slide1').className="item active";
+                     document.getElementById('slide2').style.position="absolute";
+                     document.getElementById('slide2').style.width="100%";
+                        } 
+                        function showSlide2(){
+                             $('html, body').animate({ scrollTop: 0 }, 'fast');                   
+                             document.getElementById('slide2').style.position="relative";
+                            document.getElementById('slide1').className="item";
+                            document.getElementById('slide1').style.position="absolute";
+                            document.getElementById('slide2').className="item active";
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+                        }
+                </script>
+                <!-- easyTree CSS -->
+                <link rel="stylesheet" href="resources/css/easyTree.css"/>
+                <script ty="text/javascript">
+                    function showPanel(panelID) {
+                        document.getElementById(panelID).style.float = 'none';
+                        document.getElementById(panelID).style.visibility = 'visible';
+                    }
+                    function hidePanel(panelID) {
+                        document.getElementById(panelID).style.width = '100%';
+                        document.getElementById(panelID).style.float = 'left';
+                        document.getElementById(panelID).style.visibility = 'hidden';
+
+
+                    }
+                </script>
+           <!-- Carousel CSS-->
+                 <style type="text/css">
+.carousel-inner .item img {
+	width:100%;
+	height:100%;
+}
+.item .thumbnail {
+	margin-bottom:0;
+}
+.carousel-control.left, .carousel-control.right {
+	background-image:none !important;
+}
+.carousel-control {
+	background:	#ddd;
+	color:#999;
+	padding: 4px 0;
+	width:26px;
+	top:auto;	
+	left:auto;
+	bottom:0;
+	opacity:1;
+	text-shadow:none;
+}
+.carousel-control.right {
+	right:10px;
+}
+
+.carousel-control.left {
+	right: 40px;
+}
+</style>
+            </ui:define>
+            <ui:define name="content">
+
+                <div class="row">
+            <div class="col-md-13">
+            <!-- Carousel-->
+            <div id="myCarousel" class="carousel slide">     
+                <div class="carousel-inner">           
+                    <div id="slide1" class="item active">
+                        <!--Tree-->
+                        <div class="col-lg-4">
+                        <div class="panel panel-default">   
+                            <div class="panel-heading">
+                                <span class="fa fa-sitemap fa-fw" style="margin-right:6px;"></span>Healthcare Organisations Hierarchy
+                            </div>
+                            <div class="panel-body">
+                                <!-- HTML-Generated treeview  -->      
+                                <h:outputText  value="#{OrganisationHierarchyBean.GenerateOrganisationsTree()}" escape="false"/>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <div class="col-lg-7">
+                            <!--Filter Options Panel-->
+                             <div id="divoptions" class="panel panel-default">
+                                  <div id="selectedItemTitle" class="panel-heading">
+                                    <span class="fa fa-filter" style="margin-right:6px;"></span>Apply Filters
+                                </div>
+                                 <div class="panel-body">
+                                                                         <div class="ui-grid-row">
+                                        <div class="ui-grid-col-2"> <h:outputLabel  value="Patient Gender:" /></div>
+                                        <div class="ui-grid-col-3">
+                                            <p:selectBooleanCheckbox  itemLabel="Male" value="#{chartViewer.maleSelected}"/>
+                                        </div> 
+                                        <div class="ui-grid-col-3">
+                                            <p:selectBooleanCheckbox itemLabel="Female" value="#{chartViewer.femaleSelected}"/>
+                                        </div> 
+                                    </div>
+                                    <div class="ui-grid-row">
+                                        <div class="ui-grid-col-2" style="padding-top: 12px"> <h:outputLabel value="Age Range:" /></div>
+                                        <div class="ui-grid-col-3">
+                                            <h:outputText  id="displayRange1" value="Between #{chartViewer.lowerAge} and #{chartViewer.upperAge}" />
+                                            <p:slider  for="txt6,txt7" display="displayRange1" style="width: 400px" maxValue="112" range="true" displayTemplate="Between {min} and {max}" />
+                                            <h:inputHidden id="txt6" value="#{chartViewer.lowerAge}" />
+                                            <h:inputHidden id="txt7" value="#{chartViewer.upperAge}" />
+                                        </div>
+                                    </div>
+                                    <div class="ui-grid-row">
+                                        <div class="ui-grid-col-2"> <h:outputLabel  value="Date Range:" /></div>
+                                        <div class="ui-grid-col-4">
+                                            <p:calendar id="dateFrom"  showOn="button" pattern="dd/MM/yyyy"  value="#{chartViewer.dateFrom}">
+                                             <f:convertDateTime pattern="dd/MM/yyyy" />
+                                            </p:calendar>
+                                        </div> 
+                                        <div class="ui-grid-col-4">
+                                            <p:calendar id="dateTo"  showOn="button" pattern="dd/MM/yyyy" value="#{chartViewer.dateTo}"/>
+                                        </div> 
+                                    </div>
+                                 </div>
+                             </div>
+                                 
+                        <!--KPIS Panels-->
+                            <div class="panel panel-default" id="IHFDKPISPanel" >   
+                                <div id="selectedItemTitle" class="panel-heading">
+                                    <span class="glyphicon glyphicon-sort" style="margin-right:6px;"></span>KPIs Summary
+                                </div>
+                                <div class="panel-body">
+                                  <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#tabIHFDKPIs" data-toggle="tab">IHFD KPIs</a>
+                                        </li>
+                                        
+                                        <li ><a href="#tabNIMSKPIs" data-toggle="tab">NIMS KPIs</a>
+                                        </li>
+                                        
+                                        <li><a href="#tabPCTKPIs" data-toggle="tab">Nursing KPIS</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content" style="padding-top: 15px">
+                                        <!--IHFD KPIs -->
+                                        <div class="tab-pane fade in active" id="tabIHFDKPIs">
+                                            <table class="table table-striped table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>KPI</th>  
+                                                        <th>Score</th>
+                                                        <th>Percentage</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>No. of Hip Fracture Cases </td>
+                                                        <td>
+                                                            <h:outputText id="outtxt56" value="#{kPIsViewer.ihfdCasesHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt57" value="#{kPIsViewer.ihfdCasesTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt58" value="#{kPIsViewer.ihfdCasesPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Patients aged &ge; 65 presenting at ED </td>
+                                                        <td>
+                                                            <h:outputText id="outtxt16" value="#{kPIsViewer.aged65Hits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt17" value="#{kPIsViewer.aged65Total}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt18" value="#{kPIsViewer.aged65Percent}" escape="true"/></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Male Patients </td>
+                                                        <td>
+                                                            <h:outputText id="outtxt19" value="#{kPIsViewer.malePatientsHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt20" value="#{kPIsViewer.malePatientsTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt21" value="#{kPIsViewer.malePatientsPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Female Patients </td>
+                                                        <td>
+                                                            <h:outputText id="outtxt22" value="#{kPIsViewer.femalePatientsHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt23" value="#{kPIsViewer.femalePatientsTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt24" value="#{kPIsViewer.femalePatientsPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Patients  Admitted to Ward within 4 hrs of Presentation</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt1" value="#{kPIsViewer.timetoAdmissionHits}" escape="true"/>
+                                                            out of 
+                                                            <h:outputText id="outtxt2" value="#{kPIsViewer.timetoAdmissionTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt3" value="#{kPIsViewer.timetoAdmissionPercent}" escape="true"/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Primary Surgery  within 48 hrs of Admission</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt4" value="#{kPIsViewer.timetoSurgeryHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt5" value="#{kPIsViewer.timetoSurgeryTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt6" value="#{kPIsViewer.timetoSurgeryPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Patients  with a Fragility Fracture Undergone Geriatrics Support</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt7" value="#{kPIsViewer.geriatricAssesedHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt8" value="#{kPIsViewer.geriatricAssesedTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt9" value="#{kPIsViewer.geriatricAssesedPercent}" escape="true"/></td>  
+                                                    </tr>   
+                                                    <tr>
+                                                        <td>% Patients with Fragility Fractures Assessed by Falls Specialist</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt10" value="#{kPIsViewer.fallSpecialistHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt11" value="#{kPIsViewer.fallSpecialistTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt12" value="#{kPIsViewer.fallSpecialistPercent}" escape="true"/></td>  
+                                                    </tr> 
+                                                    <tr>
+                                                        <td>% Patients with Fragility Fractures Undergone Multidisciplinary Assessment</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt13" value="#{kPIsViewer.multiAssessedHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt14" value="#{kPIsViewer.multiAssessedTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt15" value="#{kPIsViewer.multiAssessedPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Transferred Patients</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt53" value="#{kPIsViewer.transferredPatientsHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt54" value="#{kPIsViewer.transferredPatientsTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt55" value="#{kPIsViewer.transferredPatientsPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Average Length of Stay</td>
+                                                        <td colspan="2" style="text-align:center">
+                                                            <h:outputText id="outtxt25" value="#{kPIsViewer.averageLOS}" escape="true"/>
+                                                            Day(s)
+                                                        </td> 
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                        
+                                        </div>
+                                         <!--NIMS KPIs -->
+                                        <div class="tab-pane fade" id="tabNIMSKPIs">
+                                            <table class="table table-striped table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>KPI</th>  
+                                                        <th>Score</th>
+                                                        <th>Percentage</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                      <td>No. of NIMS Incidents</td>
+                                                      <td>
+                                                          <h:outputText id="outtxt26" value="#{kPIsViewer.nimsCountHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt27" value="#{kPIsViewer.nimsCountTotal}" escape="true"/>
+                                                      </td>
+                                                      <td><h:outputText id="outtxt28" value="#{kPIsViewer.nimsCountPercent}" escape="true"/></td>  
+
+                                                    </tr> 
+                                                  <tr>
+                                                        <td>% Male Patients</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt29" value="#{kPIsViewer.nimsMaleHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt30" value="#{kPIsViewer.nimsMaleTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt31" value="#{kPIsViewer.nimsMalePercent}" escape="true"/></td>  
+                                                    </tr>
+                                                  <tr>
+                                                        <td>% Female Patients</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt32" value="#{kPIsViewer.nimsFemaleHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt33" value="#{kPIsViewer.nimsFemaleTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt34" value="#{kPIsViewer.nimsFemalePercent}" escape="true"/></td>  
+                                                    </tr>
+                                                  <tr>
+                                                        <td>% Incidents at Acute Hospitals</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt35" value="#{kPIsViewer.nimsAcuteHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt36" value="#{kPIsViewer.nimsAcuteTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt37" value="#{kPIsViewer.nimsAcutePercent}" escape="true"/></td>  
+                                                    </tr>
+                                                  <tr>
+                                                        <td>% Incidents at Community Hospitals</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt38" value="#{kPIsViewer.nimsCommunityHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt39" value="#{kPIsViewer.nimsCommunityTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt40" value="#{kPIsViewer.nimsCommunityPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                  <tr>
+                                                        <td>% Incidents at Nursing Homes</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt41" value="#{kPIsViewer.nimsNursingHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt42" value="#{kPIsViewer.nimsNursingTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt43" value="#{kPIsViewer.nimsNursingPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                  <tr>
+                                                        <td>% Patients Aged >=65</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt44" value="#{kPIsViewer.nimsAged65Hits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt45" value="#{kPIsViewer.nimsAged65Total}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt46" value="#{kPIsViewer.nimsAged65Percent}" escape="true"/></td>  
+                                                    </tr>
+                                                  <tr>
+                                                        <td>% Incidents of Extreme Severity</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt47" value="#{kPIsViewer.nimsExtremeSeverityHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt48" value="#{kPIsViewer.nimsExtremeSeverityTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt49" value="#{kPIsViewer.nimsExtremeSeverityPercent}" escape="true"/></td>  
+                                                    </tr>
+                                                  <tr>
+                                                        <td>% Incidents of Almost Certain Recurrence Likelihood</td>
+                                                        <td>
+                                                            <h:outputText id="outtxt50" value="#{kPIsViewer.nimsCertainRecurrHits}" escape="true"/>
+                                                            out of
+                                                            <h:outputText id="outtxt51" value="#{kPIsViewer.nimsCertainRecurrTotal}" escape="true"/>
+                                                        </td>
+                                                        <td><h:outputText id="outtxt52" value="#{kPIsViewer.nimsCertainRecurrPercent}" escape="true"/></td>  
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                       
+                                        <div class="tab-pane fade" id="tabPCTKPIs">
+                                          pct  
+                                        </div>
+
+                                    </div>
+                                        <p:commandButton id="btnShowKPI" value="View KPI" action="#{kPIsViewer.ViewKPI()}" update="outtxt1,outtxt2,outtxt3,outtxt4,outtxt5,outtxt6,outtxt7,outtxt8,outtxt9,outtxt10,outtxt11,outtxt12,outtxt13,outtxt14,outtxt15,outtxt16,outtxt17,outtxt18,outtxt19,outtxt20,outtxt21,outtxt22,outtxt23,outtxt24,outtxt25,outtxt26,outtxt27,outtxt28,outtxt29,outtxt30,outtxt31,outtxt32,outtxt33,outtxt34,outtxt35,outtxt36,outtxt37,outtxt38,outtxt39,outtxt40,outtxt41,outtxt42,outtxt43,outtxt44,outtxt45,outtxt46,outtxt47,outtxt48,outtxt49,outtxt50,outtxt51,outtxt52,outtxt53,outtxt54,outtxt55,outtxt56,outtxt57,outtxt58" style="display: none" />
+                                        <!-- 
+                                         <h:commandButton id="btnShowKPI" value="View kpi"  style="display:none">
+                                         <f:ajax  execute="#{kPIsViewer.ViewKPI()}" render="outtxt1,outtxt2"/>
+                                     </h:commandButton>
+                                        -->   
+                                  
+                                </div>
+                            </div>
+
+                         <!-- Visualisation Options -->
+                            <div class="panel panel-default">   
+                                <div class="panel-heading">
+                                    <span class="fa fa-gears" style="margin-right:6px;"></span>Build Chart
+                                </div>
+                                <div class="panel-body">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#tabNIMSCharts" data-toggle="tab">NIMS</a>
+                                        </li>
+                                        <li><a href="#tabIHFDCharts" data-toggle="tab">IHFD</a>
+                                        </li>
+                                        <li><a href="#tabPCTCharts" data-toggle="tab">PCT</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content" style="padding-top: 15px">
+                                        <div class="tab-pane fade in active" id="tabNIMSCharts">
+                                            <div class="ui-grid-row">
+                                                <div class="ui-grid-col-2"> <h:outputLabel  value="NIMS Chart:" /></div>
+                                                <div class="ui-grid-col-1">   
+                                                    <p:selectOneMenu id="dropdown1" value="#{chartViewer.selectedNIMSChart}" style="width:235px">
+                                                        <p:ajax listener="#{chartViewer.onCountryChange('NIMS')}"/>                                                 
+                                                        <f:selectItem itemLabel="Select One" itemValue="-1" />
+                                                        <f:selectItem itemLabel="NIMS Incidents Statistics" itemValue="NIMSSummary" />
+                                                        <f:selectItem itemLabel="Age Profile" itemValue="NIMSAgeStats" />
+                                                        <f:selectItem itemLabel="Gender Profile" itemValue="NIMSGenderStats" />
+                                                        <f:selectItem itemLabel="Recurrence Likelihood" itemValue="NIMSRecurStats" />
+                                                        <f:selectItem itemLabel="Incidents Severity" itemValue="NIMSSeverity" />
+                                                        <f:selectItem itemLabel="Incidents Outcomes" itemValue="NIMSOutcomes" />
+                                                        <f:selectItem itemLabel="Incidents Risk Statistics" itemValue="NIMSRisk" />
+                                                    </p:selectOneMenu> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tabIHFDCharts">
+                                            <div class="ui-grid-row">
+                                                <div class="ui-grid-col-2"> <h:outputLabel  value="IHFD Charts:" /></div>
+                                                <div class="ui-grid-col-1">   
+                                                    <p:selectOneMenu id="dropdown2" value="#{chartViewer.selectedIHFDChart}"  style="width:235px">
+                                                        <p:ajax listener="#{chartViewer.onCountryChange('IHFD')}"/>   
+                                                        <f:selectItem itemLabel="Select One" itemValue="-1" />
+                                                        <f:selectItem itemLabel="Admission Source Statistics" itemValue="IHFDAdmissionSource" />
+                                                        <f:selectItem itemLabel="Discharge Destination Statistics" itemValue="IHFDDischargeCode" />
+                                                        <f:selectItem itemLabel="Admission-Discharge Statistics" itemValue="IHFDAdmDischarge" />
+                                                        <f:selectItem itemLabel="Discharge Status Statistics" itemValue="IHFDDischargeStatus" />
+                                                        <f:selectItem itemLabel="Admission Type Statistics" itemValue="IHFDAdmissionType" />
+                                                        <f:selectItem itemLabel="Age Profile" itemValue="IHFDAgeGroups" />
+                                                        <f:selectItem itemLabel="Gender Profile" itemValue="IHFDGender" />
+                                                        <f:selectItem itemLabel="Average LOS" itemValue="IHFDLengthofStay" />
+                                                        <f:selectItem itemLabel="LOS against Age" itemValue="IHFDAgeLOS" />
+                                                        <f:selectItem itemLabel="Trauma Type Statistics" itemValue="IHFDTraumaType" />
+                                                        <f:selectItem itemLabel="Fracture Type Statistics" itemValue="IHFDFractureType" />
+                                                        <f:selectItem itemLabel="Fall Assessment Statistics" itemValue="IHFDFallAssessment" />
+                                                        <f:selectItem itemLabel="Average Time to Surgery" itemValue="IHFDTimeToSurgery" />
+                                                        <f:selectItem itemLabel="Time to Surgery within 48hrs" itemValue="IHFDTimeToSurgery48hrs" />
+                                                        <f:selectItem itemLabel="Fragility History Statistics" itemValue="IHFDFragilityHistory" />
+                                                        <f:selectItem itemLabel="Multidisciplinary Assessment" itemValue="IHFDMultiAssessment" />
+                                                    </p:selectOneMenu> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tabPCTCharts">
+                                        </div>
+                                    </div> 
+                                    <div class="ui-grid-row">
+                                        <div class="ui-grid-col-2"> <h:outputLabel  value="Chart Type:" /></div>
+                                        <div class="ui-grid-col-3">
+                                            <p:selectBooleanCheckbox itemLabel="Bar Chart(Vertical)" value="#{chartViewer.verBarChartSelected}"/>
+                                        </div>  
+                                        <div class="ui-grid-col-3">
+                                            <p:selectBooleanCheckbox itemLabel="Bar Chart(Horizontal)" value="#{chartViewer.horBarChartSelected}"/>
+                                        </div>  
+                                        <div class="ui-grid-col-2">
+                                            <p:selectBooleanCheckbox itemLabel="Pie Chart" value="#{chartViewer.pieChartSelected}"/>
+                                        </div>
+                                        <div class="ui-grid-col-2">
+                                            <p:selectBooleanCheckbox itemLabel="Bubble Chart" value="#{chartViewer.bubbleChartSelected}"/>
+                                        </div>
+                                    </div>
+                                    <div class="ui-grid-row">
+                                        <div class="ui-grid-col-3" style="margin-top:10px;text-align:right;width:100%;">
+                                            <p:commandButton value="View Charts"  update="barChart1,horBarChart1,pieChart,bubbleChart" />
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <!-- Start Slide2-->
+                    <div id="slide2" class="item" style="position: absolute;width:100%">
+                        <button type="button" class="btn btn-primary btn-circle"  onclick="showSlide1()" style="margin-left:8px" title="Back"><i class="fa fa-arrow-left"></i></button>
+                    <!-- Visualisation Panels-->
+                    <div  class="col-lg-10" style="margin-left: 8%;margin-right:10% ">
+                        <div id="verBarChartPanel" class="panel panel-default">   
+                            <div class="panel-heading">
+                                <i class="fa fa-bar-chart-o"></i>Vertical Bar Chart
+                            </div>
+                            <div class="panel-body">
+
+                                <p:chart id="barChart1" type="bar"  model="#{chartViewer.ViewVerBarChart()}" style="height:500px" responsive="true" />
+
+                            </div>
+                        </div>
+
+                        <div id="horBarChartPanel" class="panel panel-default" >   
+                            <div class="panel-heading">
+                                <i class="fa fa-bar-chart-o"></i>Horizontal Bar Chart
+                            </div>
+                            <div class="panel-body">
+                                <p:chart id="horBarChart1" type="bar" model="#{chartViewer.ViewHorBarChart()}" style="#{chartViewer.chartStyle}" responsive="true" />
+                            </div>
+                        </div>
+
+                        <div id="pieChartPanel" class="panel panel-default" >   
+                            <div class="panel-heading">
+                                <i class="fa fa-bar-chart-o"></i>Pie Chart
+                            </div>
+                            <div class="panel-body">
+                                <p:chart id="pieChart" type="pie" model="#{chartViewer.ViewPieChart()}" style="height:400px" responsive="true" />
+                            </div>
+                        </div>
+
+                         <div id="bubbleChartPanel" class="panel panel-default" >   
+                            <div class="panel-heading">
+                                <i class="fa fa-bar-chart-o"></i>Bubble Chart
+                            </div>
+                            <div class="panel-body">
+                                <p:chart id="bubbleChart" type="bubble" model="#{chartViewer.ViewBubbleModel()}" style="height:400px" responsive="true" />
+                            </div>
+                        </div>                       
+                        
+                        
+                    </div>
+                     </div>                                                                                 
+                </div> 
+             
+                                                            
+            </div>
+            <!-- End Carousel -->     
+                
+            </div>
+
+
+         
+
+
+                </div>
+
+                <div class="row" style="display: block">
+                    <div class="col-lg-5">
+                        <h:inputText id="hiddenTxt" value="#{chartViewer.selectedOrganization}"/>
+                     <!--   <h:commandButton id="btnAjax" value="Show NIMS Details" >
+                            <f:ajax  execute="hiddenTxt" render="hiddenTxt"/>
+                        </h:commandButton>-->
+                     <h:dataTable>
+                         
+                         
+                     </h:dataTable>
+                    </div>
+
+                </div>
+
+            </ui:define>
+
+            <ui:define name="bottom">
+                
+<script>
+	$('#myCarousel').carousel({
+	pause: true,	
+        interval:   false
+	});
+</script>
+                <!-- easyTree JS -->
+                <script src="resources/js/easyTree.js"></script>
+                <script>
+                    (function ($) {
+                        function init() {
+                            $('.easy-tree').EasyTree({
+                                selectable: true,
+                                deletable: false,
+                                editable: false,
+                                addable: false,
+                            });
+                        }
+                        window.onload = init();
+                    })(jQuery)
+                    $('#root li:has(ul) span.glyphicon-folder-open').trigger('click');
+             document.getElementById("form1:btnShowKPI").click();
+                </script>
+                <style>
+                    .ui-selectonemenu-items-wrapper{
+                        width:225px;
+                    }
+                    .ui-selectonemenu .ui-selectonemenu-trigger
+                    {
+                        width: 25px;
+                        padding:3px 3px;
+                    }
+                    .ui-chkbox .ui-chkbox-label 
+                    {
+
+                        vertical-align:text-bottom;
+                    }
+                    .ui-grid-col-2{
+
+                    }
+                    label
+                    {
+                        vertical-align: text-bottom;
+                        margin-right: 6px;
+                    }
+                </style>
+
+            </ui:define>
+        </ui:composition>
+
+    </body>
+</html>

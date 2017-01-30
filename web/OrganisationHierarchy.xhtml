@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./masterTemplate.xhtml">
+            <!-- Client CSS/JS-->
+            <ui:define name="TemplateClientHeader">
+                                <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+             <!-- easyTree CSS -->
+                <link rel="stylesheet" href="resources/css/easyTree.css"/>
+                <script ty="text/javascript">
+                    function setTitle(title){
+      //   hideNIMSPanel();              
+        document.getElementById("selectedItemTitle").innerHTML=title;
+     $("#nimsSummaryPanel").fadeIn("slow");               
+    }
+   function hideNIMSPanel(){
+         $("#nimsSummaryPanel").hide();                           
+    }            
+                </script>
+            </ui:define>
+            <ui:define name="content">
+                
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default">   
+                            <div class="panel-heading">
+                           Summary
+                            </div>
+                            <div class="panel-body">
+                              <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    Total Population:
+                                    <span class="pull-right big"><em>#{SummaryStats.totalPopulation}</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    No. of CHOs:
+                                    <span class="pull-right big"><em>#{SummaryStats.chosNo}</em>
+                                    </span>
+                                </a>
+                                 <a href="#" class="list-group-item">
+                                    No. of Hospital Groups:
+                                    <span class="pull-right big"><em>#{SummaryStats.hospitalGroupsNo}</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    No. of Acute Hospitals:
+                                    <span class="pull-right big"><em>#{SummaryStats.hospitalsNo}</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                     No. of Community Hospitals:
+                                     <span class="pull-right big"><em>#{SummaryStats.commHospitalsNo}</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    No. of Care Homes:
+                                    <span class="pull-right big"><em>#{SummaryStats.careHomesNo}</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    No. Primary Care Teams:
+                                    <span class="pull-right big"><em>#{SummaryStats.pctsNo}</em>
+                                    </span>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">   
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap fa-fw"></i>Healthcare Organisations Hierarchy
+                            </div>
+                            <div class="panel-body">
+                                <!-- HTML-Generated treeview  -->      
+                                <h:outputText  value="#{OrganisationHierarchyBean.GenerateOrganisationsTree()}" escape="false"/>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    
+                    <div class="col-lg-4">
+                        <div class="panel panel-default" id="nimsSummaryPanel" style="display: none">   
+                            <div id="selectedItemTitle" class="panel-heading">
+                                NIMS Incidents Summary
+                            </div>
+                            <div class="panel-body">
+                                    <div class="table-responsive">
+                          <h:outputText id="outtxt" value="#{SummaryStats.GenerateNimsSummary()}" escape="false"/><br/><br/>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+            <h:inputText id="hiddenTxt" value="#{SummaryStats.targetCHO}"/>
+              
+            <h:commandButton id="btnAjax" value="Show NIMS Details" >
+                <f:ajax  execute="hiddenTxt" render="outtxt"/>
+            </h:commandButton>
+                    </div>
+                    
+                </div>
+            </ui:define>
+
+            <ui:define name="bottom">
+                <!-- easyTree JS -->
+                <script src="resources/js/easyTree.js"></script>
+                <script>
+                    (function ($) {
+                        function init() {
+                            $('.easy-tree').EasyTree({
+                                selectable: true,
+                                deletable: false,
+                                editable: false,
+                                addable: false,
+                            });
+                        }
+                        window.onload = init();
+                    })(jQuery)
+                    $('#root li:has(ul) span.glyphicon-folder-open').trigger('click');
+                </script>
+            </ui:define>
+        </ui:composition>
+
+    </body>
+</html>

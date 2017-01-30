@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>jsf.js AJAX Example</title>
+        <h:outputScript library="javax.faces" name="jsf.js"/>
+        <h:outputStylesheet library="css" name="default.css"/>
+        <script type="text/javascript">
+            var statusUpdate = function statusUpdate(data) {
+                var statusArea = document.getElementById("statusArea");
+                var text = statusArea.value;
+                text = text + "Name: " + data.source.id;
+                if (data.type === "event") {
+                    text = text + " Event: " + data.type + "\n";
+                    text = text + " Status: " + data.status + "\n";
+                    if (data.status !== 'begin') {
+                        text = text + " Response Code: " + data.responseCode + "\n";
+                    }
+                } else {  // otherwise, it's an error
+                    text = text + " Error: " + data.name + "\n";
+                }
+                statusArea.value = text;
+            };
+ 
+            function handleAjax(data) {
+                var status = data.status;
+ 
+                switch (status) {
+                    case "begin":
+                        // This is the start of the AJAX request.
+                        document.getElementById("statusArea").value = '';
+                        document.getElementsByTagName('body')[0].className = 'loading';
+                        break;
+ 
+                    case "complete":
+                        // This is invoked right after ajax response is returned.
+                        break;
+ 
+                    case "success":
+                        // This is invoked right after successful processing of ajax response and update of HTML DOM.
+                        document.getElementsByTagName('body')[0].className = '';
+                        break;
+                }
+            }
+ 
+           //Setup the statusUpdate function to hear all events on the page
+            jsf.ajax.addOnEvent(handleAjax);
+          jsf.ajax.addOnEvent(statusUpdate);
+         jsf.ajax.addOnError(statusUpdate);
+        </script>
+    </h:head>
+    <h:body>
+        <h:inputTextarea id="statusArea" cols="40" rows="10" readonly="true" disabled="true" style="resize: none;"/>
+        <h:form id="form1">
+            <h:panelGrid id="panelGrid1" columns="2">
+                <h:outputText id="uuid" value="#{indexBean.uuid}" style="font-size: 18px; font-weight: bold; color: salmon;"/>
+                <h:message for="uuid"/>
+                <h:panelGroup id="panelGroup1">
+                    <h:commandButton id="submitButton" value="Generate UUID" actionListener="#{indexBean.generateUUID()}">
+                        <f:ajax execute="@form" render="panelGrid1"/>
+                    </h:commandButton>
+                </h:panelGroup>
+                
+              
+                
+            </h:panelGrid>
+            <div class="modal">
+<!-- Place at bottom of page --></div>
+</h:form>
+    </h:body>
+</html>

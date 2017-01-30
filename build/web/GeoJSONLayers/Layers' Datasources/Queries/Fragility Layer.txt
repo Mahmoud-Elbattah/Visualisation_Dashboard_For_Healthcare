@@ -1,0 +1,7 @@
+select communityhealthcareorganisation.id,count(*)
+from hfdrecord inner join hospital on hfdrecord.hospitalCode=hospital.DoHCode
+inner join communityhealthcareorganisation on hospital.areaid=communityhealthcareorganisation.id
+where 
+hfdrecord.fragilityHistory!=1
+Group by communityhealthcareorganisation.id
+order by count(*) desc

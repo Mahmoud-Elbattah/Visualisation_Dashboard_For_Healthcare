@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./masterTemplate.xhtml">
+
+            <ui:define name="TemplateClientHeader">
+                <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+            </ui:define>
+            <ui:define name="content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">   
+                            <div class="panel-heading">
+                                <i class="glyphicon glyphicon-ok"></i>AFFINITY Program Completion Status
+                            </div>
+                            <div class="panel-body">
+                              <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                        CHO1 40% Complete
+                                    </div>
+                                </div>
+                             <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                        CHO2 50% Complete
+                                    </div>
+                                </div>
+                             <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                        CHO3 75% Complete
+                                    </div>
+                                </div>
+                              <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                                        CHO4 45% Complete
+                                    </div>
+                                </div>
+                              <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                        CHO5 60% Complete
+                                    </div>
+                                </div>
+                         <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                        CHO6 30% Complete
+                                    </div>
+                                </div>
+                                 <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="35"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:35%">
+                                        CHO7 35% Complete
+                                    </div>
+                                </div>
+                                 <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                                        CHO8 55% Complete
+                                    </div>
+                                </div>
+                                 <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="15"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:15%">
+                                        CHO9 15% Complete
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+
+
+        </ui:composition>
+
+    </body>
+</html>

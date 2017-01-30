@@ -1,0 +1,1257 @@
+{
+"type": "FeatureCollection","features": [{
+"type": "Feature",
+"properties": {
+"Name":"Our Lady's Hospital for Sick Children, Crumlin\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.320437999999999,53.3249416]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"MARY'S HOSPITAL, PHOENIX PARK\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.3355916,53.34945640000001]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Columcille�s Hospital, Loughlinstown\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.133303,53.2419966]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Naas General Hospital, Naas\nCo.Kildare",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.6613438,53.21157419999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mater Misericordiae University Hospital, Eccles St\nCo.Dublin",
+"PatientCount":"43 of 1377 (3.12%)",
+"PatientsAged65":"43 of 43 (100.00%)",
+"MalePatients":"15 of 43 (34.88%)",
+"FemalePatients":"28 of 43 (65.12%)",
+"AdmittedWithin4hrs":"3 of 43 (6.98%)",
+"SurgeryWithin48hrs":"32 of 43 (74.42%)",
+"AvgLOS":"24 of 43 (55.81%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.266937,53.360193]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Vincent�s University Hospital, Elm Park\nCo.Dublin",
+"PatientCount":"203 of 1377 (14.74%)",
+"PatientsAged65":"197 of 203 (97.04%)",
+"MalePatients":"50 of 203 (24.63%)",
+"FemalePatients":"153 of 203 (75.37%)",
+"AdmittedWithin4hrs":"3 of 203 (1.48%)",
+"SurgeryWithin48hrs":"196 of 203 (96.55%)",
+"AvgLOS":"24 of 203 (11.82%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.2126985,53.3169379]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Peamount Hospital\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.481561,53.316796]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"National Orthopaedic Hospital, Cappagh\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.3285336,53.3939005]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Mary's Auxilliary, Baldoyl\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.127252,53.398847]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"The Children�s University Hospital, Temple St\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.2620401,53.3568931]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Hume St. Hospital, Dublin\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.254959299999999,53.3375356]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Luke's Hospital, Rathgar\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.266835599999999,53.3093029]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. James's Hospital\nCo.Dublin",
+"PatientCount":"64 of 1377 (4.65%)",
+"PatientsAged65":"62 of 64 (96.88%)",
+"MalePatients":"16 of 64 (25.00%)",
+"FemalePatients":"48 of 64 (75.00%)",
+"AdmittedWithin4hrs":"2 of 64 (3.12%)",
+"SurgeryWithin48hrs":"50 of 64 (78.12%)",
+"AvgLOS":"29 of 64 (45.31%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.29508,53.339552]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Connolly Hospital, Blanchardstown\nCo.Dublin",
+"PatientCount":"55 of 1377 (3.99%)",
+"PatientsAged65":"53 of 55 (96.36%)",
+"MalePatients":"14 of 55 (25.45%)",
+"FemalePatients":"41 of 55 (74.55%)",
+"AdmittedWithin4hrs":"2 of 55 (3.64%)",
+"SurgeryWithin48hrs":"50 of 55 (90.91%)",
+"AvgLOS":"18 of 55 (32.73%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.3686728,53.38917679999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Michael's Hospital, Dun Laoghaire\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.138272799999999,53.293809]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Royal Victoria Eye and Ear Hospital\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.256048499999999,53.3328177]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"National Rehabilitation Hospital, Rochestown Dun Laoghaire\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.1513442,53.2758003]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Cherry Orchard Hospital, Ballyfermota\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.3775204,53.34457039999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Beaumont Hospital\nCo.Dublin",
+"PatientCount":"3 of 1377 (.22%)",
+"PatientsAged65":"3 of 3 (100.00%)",
+"MalePatients":"1 of 3 (33.33%)",
+"FemalePatients":"2 of 3 (66.67%)",
+"AdmittedWithin4hrs":"0 of 3 (0%)",
+"SurgeryWithin48hrs":"2 of 3 (66.67%)",
+"AvgLOS":"21 of 3 (700.00%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.223411,53.390418]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"The Coombe Women and Infants University Hospital\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.2885074,53.3348326]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Rotunda Hospital\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.2645556,53.3528317]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"National Maternity Hospital, Holles St\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.245992999999999,53.34024849999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Waterford Maternity, Airmount\nCo.Waterford",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.0779307,52.2468292]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"The Adelaide & Meath Hospital, incorporating the National Children�s Hospital, Tallaght\nCo.Dublin",
+"PatientCount":"128 of 1377 (9.30%)",
+"PatientsAged65":"121 of 128 (94.53%)",
+"MalePatients":"37 of 128 (28.91%)",
+"FemalePatients":"91 of 128 (71.09%)",
+"AdmittedWithin4hrs":"2 of 128 (1.56%)",
+"SurgeryWithin48hrs":"104 of 128 (81.25%)",
+"AvgLOS":"19 of 128 (14.84%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.376674,53.290713]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Joseph's Hospital, Raheny\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.1838554,53.3835657]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Incorporated Orthopaedic Hospital of Ireland, Clontarf\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.2016427,53.3669703]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Blackrock Hospice\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.178316,53.299131]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Waterford Regional Hospital\nCo.Waterford",
+"PatientCount":"274 of 1377 (19.90%)",
+"PatientsAged65":"261 of 274 (95.26%)",
+"MalePatients":"74 of 274 (27.01%)",
+"FemalePatients":"200 of 274 (72.99%)",
+"AdmittedWithin4hrs":"8 of 274 (2.92%)",
+"SurgeryWithin48hrs":"236 of 274 (86.13%)",
+"AvgLOS":"18 of 274 (6.57%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.0779307,52.2468292]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Luke�s General Hospital, Kilkenny\nCo.Kilkenny",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.262818599999999,52.66494849999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Our Lady's Hospital, Cashel\nCo.Tipperary",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.887031,52.516695]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Wexford General Hospital\nCo.Wexford",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.4830035,52.3419293]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Lourdes Orthopaedic Hospital, Kilcreene\nCo.Kilkenny",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.275058,52.649951]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"South Tipperary General Hospital, Clonmel\nCo.Tipperary",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.7143757,52.355298]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Finbarr's Hospital, Cork\nCo.Cork",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.461288399999999,51.8861618]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Bantry General Hospital, Co Cork\nCo.Cork",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.4497243,51.67621519999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mercy University Hospital, Cork\nCo.Cork",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.482581699999999,51.8985244]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"South Infirmary / Victoria Hospital, Cork\nCo.Cork",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.4633364,51.8933653]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mallow General Hospital, Cork\nCo.Cork",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.663194,52.15236]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. Mary�s Orthopaedic Hospital, Gurranebraher\nCo.Cork",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.4983191,51.9058717]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Cork University Hospital\nCo.Cork",
+"PatientCount":"4 of 1377 (.29%)",
+"PatientsAged65":"4 of 4 (100.00%)",
+"MalePatients":"1 of 4 (25.00%)",
+"FemalePatients":"3 of 4 (75.00%)",
+"AdmittedWithin4hrs":"0 of 4 (0%)",
+"SurgeryWithin48hrs":"2 of 4 (50.00%)",
+"AvgLOS":"10 of 4 (250.00%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.510574,51.882886]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Kerry General Hospital\nCo.Kerry",
+"PatientCount":"2 of 1377 (.15%)",
+"PatientsAged65":"2 of 2 (100.00%)",
+"MalePatients":"0 of 2 (0%)",
+"FemalePatients":"2 of 2 (100.00%)",
+"AdmittedWithin4hrs":"1 of 2 (50.00%)",
+"SurgeryWithin48hrs":"2 of 2 (100.00%)",
+"AvgLOS":"9 of 2 (450.00%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.684224500000001,52.267361]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mid-Western Regional Maternity Hospital\nCo.Limerick",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.6306,52.66716]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mid-Western Regional Hospital, Dooradoyle\nCo.Limerick",
+"PatientCount":"158 of 1377 (11.47%)",
+"PatientsAged65":"150 of 158 (94.94%)",
+"MalePatients":"47 of 158 (29.75%)",
+"FemalePatients":"111 of 158 (70.25%)",
+"AdmittedWithin4hrs":"28 of 158 (17.72%)",
+"SurgeryWithin48hrs":"132 of 158 (83.54%)",
+"AvgLOS":"10 of 158 (6.33%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.6547793,52.6349682]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mid-Western Regional Orthopaedic Hospital\nCo.Limerick",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.654375,52.634746]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St. John's Hospital, Limerick\nCo.Limerick",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.434582299999999,52.4693374]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mid-Western Regional Hospital, Ennis\nCo.Clare",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.983316499999999,52.8510808]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mid-Western Regional Hospital, Nenagh\nCo.Tipperary",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.1975561,52.8642968]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Roscommon County Hospital\nCo.Roscommon",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.175359799999999,53.6246638]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Portiuncula Hospital\nCo.Galway",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.2351859,53.3267272]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Galway University Hospitals\nCo.Galway",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.063684199999999,53.2763903]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Regional, Merlin Park, Galway\nCo.Galway",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.988552799999999,53.2776434]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Mayo General Hospital\nCo.Mayo",
+"PatientCount":"36 of 1377 (2.61%)",
+"PatientsAged65":"36 of 36 (100.00%)",
+"MalePatients":"9 of 36 (25.00%)",
+"FemalePatients":"27 of 36 (75.00%)",
+"AdmittedWithin4hrs":"20 of 36 (55.56%)",
+"SurgeryWithin48hrs":"32 of 36 (88.89%)",
+"AvgLOS":"17 of 36 (47.22%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.3058237,53.8515702]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Ballina District Hospital\nCo.Mayo",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-9.165292,54.114529]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Midland Regional Hospital, Tullamore\nCo.Offaly",
+"PatientCount":"164 of 1377 (11.91%)",
+"PatientsAged65":"151 of 164 (92.07%)",
+"MalePatients":"46 of 164 (28.05%)",
+"FemalePatients":"118 of 164 (71.95%)",
+"AdmittedWithin4hrs":"25 of 164 (15.24%)",
+"SurgeryWithin48hrs":"121 of 164 (73.78%)",
+"AvgLOS":"14 of 164 (8.54%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.4933852,53.27552550000001]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Midland Regional Hospital, Mullingar\nCo.Westmeath",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.348978300000001,53.53418079999999]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Midland Regional Hospital, Portlaoise\nCo.Laois",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.2764718,53.037043]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Letterkenny General Hospital\nCo.Donegal",
+"PatientCount":"12 of 1377 (.87%)",
+"PatientsAged65":"12 of 12 (100.00%)",
+"MalePatients":"2 of 12 (16.67%)",
+"FemalePatients":"10 of 12 (83.33%)",
+"AdmittedWithin4hrs":"0 of 12 (0%)",
+"SurgeryWithin48hrs":"9 of 12 (75.00%)",
+"AvgLOS":"28 of 12 (233.33%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.734394,54.9592354]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Sligo General Hospital\nCo.Sligo",
+"PatientCount":"39 of 1377 (2.83%)",
+"PatientsAged65":"38 of 39 (97.44%)",
+"MalePatients":"9 of 39 (23.08%)",
+"FemalePatients":"30 of 39 (76.92%)",
+"AdmittedWithin4hrs":"5 of 39 (12.82%)",
+"SurgeryWithin48hrs":"31 of 39 (79.49%)",
+"AvgLOS":"13 of 39 (33.33%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.4647822,54.2731768]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Our Lady's, Manorhamilton\nCo.Leitrim",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-8.1672055,54.30369630000001]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Our Lady of Lourdes Hospital, Drogheda\nCo.Louth",
+"PatientCount":"192 of 1377 (13.94%)",
+"PatientsAged65":"184 of 192 (95.83%)",
+"MalePatients":"53 of 192 (27.60%)",
+"FemalePatients":"139 of 192 (72.40%)",
+"AdmittedWithin4hrs":"25 of 192 (13.02%)",
+"SurgeryWithin48hrs":"144 of 192 (75.00%)",
+"AvgLOS":"20 of 192 (10.42%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.3533338,53.7224048]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"General Hospital, Cavan\nCo.Cavan",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-7.374413499999999,53.9986583]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Louth County Hospital\nCo.Louth",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.402206,53.988076]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Monaghan General Hospital\nCo.Monaghan",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.973825,54.250294]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"Our Lady�s Hospital, Navan\nCo.Meath",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.6948216,53.6510612]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Luke's Radiation Oncology Network - St James's Centre\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.293613,53.340706]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"Name":"St Luke's Radiation Oncology Network - Beaumont Centre\nCo.Dublin",
+"PatientCount":"0 of 1377 (0%)",
+"PatientsAged65":"0 of 0 (0%)",
+"MalePatients":"0 of 0 (0%)",
+"FemalePatients":"0 of 0 (0%)",
+"AdmittedWithin4hrs":"0 of 0 (0%)",
+"SurgeryWithin48hrs":"0 of 0 (0%)",
+"AvgLOS":"0 of 0 (0%)",
+"icon":"acute.png"
+},
+"geometry": {
+"type": "Point",
+"coordinates":
+[-6.223422,53.390415]
+}
+}
+]
+}
